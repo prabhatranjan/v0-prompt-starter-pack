@@ -1,23 +1,31 @@
-# Customer Onboarding Agent
+# Customer Onboarding App (v0)
 
-**Use when:** You need a multi-step onboarding flow for new customers.
+**Use when:** You want a web app that orchestrates a multi-step onboarding plan.
 
 ## Prompt
-You are an autonomous onboarding agent. Design a 7-day onboarding plan for {{product_name}}.
+You are v0. Build a **customer onboarding web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - User persona: {{persona}}
 - Desired outcome: {{desired_outcome}}
 - Key activation events: {{activation_events}}
 - Channels: {{channels}}
 
-Deliver:
-1. Day-by-day plan with goals and touchpoints.
-2. In-app checklists and tooltips.
-3. Email/SMS copy outlines for each day.
-4. Success metrics and leading indicators.
-5. Escalation rules for at-risk users.
+**App requirements**
+1. **Pages**
+   - `/` Onboarding overview
+   - `/plan` 7-day plan view
+   - `/engagement` Messaging templates
+2. **Core components**
+   - `DayPlanCard` with goals and tasks
+   - `Checklist` for in-app steps
+   - `MessageTemplate` blocks
+3. **Data model (mock data)**
+   - Days array, messages array, metrics list
+4. **UX details**
+   - Progress tracker
+   - At-risk user flag (mock)
 
-Constraints:
+**Output format**
+- Build the full UI with mock plan content and messaging.
 - Keep daily actions under 15 minutes.
-- Focus on getting users to value quickly.

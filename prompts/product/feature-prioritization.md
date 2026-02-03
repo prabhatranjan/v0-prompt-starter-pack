@@ -1,21 +1,30 @@
-# Feature Prioritization (RICE)
+# Feature Prioritization App (v0)
 
-**Use when:** You need to prioritize a backlog quickly and defensibly.
+**Use when:** You want a web app that scores and ranks features.
 
 ## Prompt
-You are a product manager. Prioritize features for {{product_name}} using RICE.
+You are v0. Build a **feature prioritization web app** for {{product_name}} using RICE.
 
-Inputs:
+**Inputs**
 - Candidate features: {{features}}
 - Target users: {{target_users}}
 - Time frame: {{time_frame}}
 
-Deliver:
-1. A RICE table with Reach, Impact, Confidence, Effort, and Score.
-2. Top 5 recommendations with rationale.
-3. 2 quick-win ideas.
-4. Risks or unknowns to validate.
+**App requirements**
+1. **Pages**
+   - `/` Prioritization dashboard
+   - `/backlog` Feature list with RICE scores
+   - `/insights` Top recommendations + quick wins
+2. **Core components**
+   - `RICEInputTable` with editable cells (mock)
+   - `ScoreBadge`
+   - `RecommendationList`
+3. **Data model (mock data)**
+   - Features array with reach, impact, confidence, effort, score
+4. **UX details**
+   - Sortable columns
+   - Highlight top 5 in a callout
 
-Constraints:
-- Provide clear, realistic assumptions.
-- Use a 1–10 scale for Impact and Confidence.
+**Output format**
+- Build the full UI with tables and insights cards.
+- Provide realistic assumptions in mock data.

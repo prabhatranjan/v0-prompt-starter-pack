@@ -1,23 +1,32 @@
-# Mockup Brief
+# Mockup Briefing App (v0)
 
-**Use when:** You need a concise brief for a designer or AI mockup tool.
+**Use when:** You want a web app that creates mockup briefs and screen requirements.
 
 ## Prompt
-You are a creative director. Write a mockup brief for {{screen_name}}.
+You are v0. Build a **mockup briefing web app** for {{screen_name}}.
 
-Inputs:
+**Inputs**
 - User goal: {{user_goal}}
 - Primary action: {{primary_action}}
 - Content requirements: {{content_requirements}}
 - Brand style: {{brand_style}}
 - Constraints: {{constraints}}
 
-Deliver:
-1. Layout description (top-to-bottom).
-2. Visual style guidance (color, typography, imagery).
-3. Interaction notes (hover, focus, empty states).
-4. Success criteria (what a good mockup achieves).
+**App requirements**
+1. **Pages**
+   - `/` Brief overview
+   - `/layout` Layout plan
+   - `/criteria` Success criteria
+2. **Core components**
+   - `LayoutStack` (top-to-bottom layout)
+   - `StyleGuideCard`
+   - `InteractionNotes` list
+3. **Data model (mock data)**
+   - Sections array, style tokens, criteria list
+4. **UX details**
+   - Word count indicator (mock)
+   - Template selector (mock)
 
-Constraints:
-- Keep the brief to 250 words max.
-- Ensure the layout supports the primary action.
+**Output format**
+- Build the full UI with structured briefs and sample content.
+- Keep the brief concise and scannable.

@@ -1,26 +1,35 @@
-# Campaign Brief Generator
+# Campaign Planner App (v0)
 
-**Use when:** You need a full campaign brief ready for creative + media execution.
+**Use when:** You want a web app that builds a campaign brief and execution plan.
 
 ## Prompt
-You are a growth marketer. Create a campaign brief for {{campaign_name}}.
+You are v0. Build a **campaign planner web app** for {{campaign_name}}.
 
-Inputs:
+**Inputs**
 - Objective: {{objective}}
 - Target audience: {{audience}}
 - Offer: {{offer}}
 - Channels: {{channels}}
 - Budget: {{budget}}
 - Timing: {{timeline}}
+- Brand voice: {{brand_voice}}
 
-Deliver:
-1. Campaign summary (3–5 sentences).
-2. Key message hierarchy (primary + 3 supporting messages).
-3. Channel-by-channel tactics and KPIs.
-4. Creative concept directions (3 options).
-5. Measurement plan with success thresholds.
-6. Risks + mitigations.
+**App requirements**
+1. **Pages**
+   - `/` Campaign summary dashboard
+   - `/brief` Structured brief output
+   - `/channels` Channel tactics + KPIs
+2. **Core components**
+   - `BriefSection` cards
+   - `ChannelPlanTable` with KPIs
+   - `CreativeDirections` list
+   - `RiskMitigation` callout
+3. **Data model (mock data)**
+   - Campaign object with goals, messages, channels, and KPIs
+4. **UX details**
+   - Print-ready brief view
+   - Button to duplicate campaign (mock)
 
-Constraints:
-- Make KPIs measurable and time-bound.
-- Keep tone aligned to {{brand_voice}}.
+**Output format**
+- Build the full UI with mock data displayed in cards and tables.
+- Copy should be concise and actionable.

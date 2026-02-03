@@ -1,24 +1,32 @@
-# User Research Plan
+# User Research Planner App (v0)
 
-**Use when:** You need a plan for validating a product idea or feature.
+**Use when:** You want a web app that organizes a research plan and discussion guide.
 
 ## Prompt
-You are a UX researcher. Create a research plan for {{research_topic}}.
+You are v0. Build a **user research planner web app** for {{research_topic}}.
 
-Inputs:
+**Inputs**
 - Objective: {{objective}}
 - Hypotheses: {{hypotheses}}
 - Target participants: {{participants}}
 - Timeline: {{timeline}}
 - Constraints: {{constraints}}
 
-Deliver:
-1. Research questions (5–8).
-2. Methods (interviews, surveys, usability tests) with rationale.
-3. Participant screener criteria.
-4. Discussion guide outline.
-5. Analysis plan and success criteria.
+**App requirements**
+1. **Pages**
+   - `/` Research plan overview
+   - `/questions` Research questions + guide
+   - `/participants` Screener criteria
+2. **Core components**
+   - `QuestionList` with categories
+   - `MethodSelector` cards
+   - `TimelineList` with milestones
+3. **Data model (mock data)**
+   - Questions array, methods array, screener criteria
+4. **UX details**
+   - Checklist for plan completeness
+   - Export plan button (mock)
 
-Constraints:
-- Keep the plan doable within the timeline.
-- Avoid leading questions.
+**Output format**
+- Build the full UI with structured sections and mock data.
+- Avoid leading questions in the sample content.

@@ -1,23 +1,33 @@
-# Email Nurture Sequence
+# Email Nurture Studio App (v0)
 
-**Use when:** You need a conversion-focused email drip for a new lead or trial user.
+**Use when:** You want a web app that creates and manages an email sequence.
 
 ## Prompt
-You are a lifecycle marketer. Write a {{num_emails}}-email nurture sequence for {{product_name}}.
+You are v0. Build an **email nurture studio web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Audience: {{audience}}
 - Primary pain point: {{pain_point}}
 - Desired outcome: {{desired_outcome}}
 - Offer/CTA: {{cta}}
 - Tone: {{tone}}
+- Sequence length: {{num_emails}}
 
-Deliver:
-- Subject line + preview text for each email.
-- Email body copy (short and scannable).
-- CTA per email.
-- Behavioral goal per email (e.g., "book demo").
+**App requirements**
+1. **Pages**
+   - `/` Sequence overview
+   - `/emails` Email list + editor
+   - `/analytics` Open/click mock metrics
+2. **Core components**
+   - `EmailList` with status badges
+   - `EmailEditor` with subject + preview
+   - `PerformanceCard` for metrics
+3. **Data model (mock data)**
+   - Emails array with subject, preview, body, goal
+4. **UX details**
+   - A/B subject line toggle (mock)
+   - Plain-text preview panel
 
-Constraints:
-- Keep each email under 200 words.
-- Use plain-text formatting.
+**Output format**
+- Build the full UI with mock data and realistic layouts.
+- Keep email bodies short and scannable.

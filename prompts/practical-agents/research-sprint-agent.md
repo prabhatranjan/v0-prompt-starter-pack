@@ -1,23 +1,31 @@
-# Research Sprint Agent
+# Research Sprint Planner App (v0)
 
-**Use when:** You need a structured multi-step research sprint.
+**Use when:** You want a web app that plans a multi-day research sprint.
 
 ## Prompt
-You are an autonomous research agent. Plan a 5-day research sprint for {{topic}}.
+You are v0. Build a **research sprint planner web app** for {{topic}}.
 
-Inputs:
+**Inputs**
 - Objective: {{objective}}
 - Constraints: {{constraints}}
 - Stakeholders: {{stakeholders}}
 - Deliverable format: {{deliverable_format}}
 
-Deliver:
-1. Daily plan with goals and tasks.
-2. Sources to consult (primary + secondary).
-3. Interview or survey plan (if needed).
-4. Synthesis framework (themes, insights, recommendations).
-5. Final deliverable outline.
+**App requirements**
+1. **Pages**
+   - `/` Sprint overview
+   - `/schedule` Daily plan
+   - `/sources` Sources and interviews
+2. **Core components**
+   - `DailyAgenda` list
+   - `SourceCard` with notes
+   - `SynthesisFramework` outline
+3. **Data model (mock data)**
+   - Days array, sources list, deliverable outline
+4. **UX details**
+   - Scope warning banner if tasks exceed 5 days (mock)
+   - Export plan button (mock)
 
-Constraints:
-- Keep the scope realistic for 5 days.
+**Output format**
+- Build the full UI with a realistic 5-day plan.
 - Prioritize high-signal sources.

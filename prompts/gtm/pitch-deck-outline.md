@@ -1,11 +1,11 @@
-# Pitch Deck Outline
+# Pitch Deck Builder App (v0)
 
-**Use when:** You need a GTM-ready pitch deck for a product, feature, or startup.
+**Use when:** You want a web app that generates a pitch deck outline and preview.
 
 ## Prompt
-You are a GTM strategist. Create a 10–12 slide pitch deck outline for {{company_name}}.
+You are v0. Build a **pitch deck builder web app** for {{company_name}}.
 
-Inputs:
+**Inputs**
 - One-liner: {{one_liner}}
 - Target market: {{target_market}}
 - Problem: {{problem}}
@@ -15,12 +15,22 @@ Inputs:
 - Competitive landscape: {{competition}}
 - Ask: {{ask}}
 
-Deliver:
-- Slide titles and 3–5 bullets per slide.
-- Notes for the presenter on each slide.
-- Suggested visuals (charts, screenshots, diagrams).
-- 3 alternative hooks for Slide 1.
+**App requirements**
+1. **Pages**
+   - `/` Deck overview + input panel
+   - `/slides` Slide list with editable outline
+   - `/preview` Visual preview of 10–12 slides
+2. **Core components**
+   - `SlideList` (title + bullets)
+   - `SlideEditor` (inline edits for text)
+   - `SlidePreview` (card-based mock slides)
+3. **Data model (mock data)**
+   - Slides array with titles, bullets, and speaker notes
+4. **UX details**
+   - Left sidebar for navigation
+   - Autosave indicator (mock state)
+   - Export button (mock)
 
-Constraints:
-- Keep each slide’s bullets under 12 words.
-- Emphasize clarity over hype.
+**Output format**
+- Provide a complete, navigable UI with mock data and layout.
+- Keep slide bullets concise.

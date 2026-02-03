@@ -1,16 +1,16 @@
 # v0 Prompt Starter Pack
 
-A curated library of high-quality prompts to help you go from idea → production faster with **v0**. Use these prompts as copy‑paste starting points for landing pages, product tooling, marketing workflows, design systems, developer tools, analytics, and practical agents.
+A curated library of **v0-first prompts** that instruct v0 to build complete, production-ready **web apps** (not just text outputs). Each prompt defines pages, components, data models, and UX details so you can go from idea → working UI in minutes.
 
 ## What’s inside
 
-- **📊 GTM (Go-To-Market):** landing pages, pitch decks, positioning
-- **📣 Marketing:** campaign briefs, social content, email sequences
-- **🎯 Product:** roadmaps, feature prioritization, research plans
-- **🎨 Design:** design systems, component libraries, mockup briefs
-- **💻 Dev:** API docs, scaffolds, developer tool briefs
-- **📈 Data:** dashboards, audits, metric trees
-- **🤖 Practical Agents:** multi-step workflows, autonomous assistants
+- **📊 GTM (Go-To-Market):** landing pages, positioning, pitch deck builders
+- **📣 Marketing:** campaign planners, social content studios, email nurture apps
+- **🎯 Product:** roadmaps, feature prioritization, research planning
+- **🎨 Design:** design systems, component libraries, mockup briefers
+- **💻 Dev:** API docs portals, scaffolding planners, developer tool briefs
+- **📈 Data:** dashboards, analytics audits, metric trees
+- **🤖 Practical Agents:** onboarding, research sprints, QA triage workflows
 
 ## Folder structure
 
@@ -25,27 +25,27 @@ prompts/
   practical-agents/
 ```
 
-Each folder contains Markdown files with **ready-to-use prompts** and **clear inputs** you can fill in quickly.
+Each folder contains Markdown files with **ready-to-use v0 prompts** and **clear inputs**.
 
 ## How to use
 
-1. Browse a category folder (e.g., `prompts/marketing/`).
-2. Pick a prompt file.
-3. Replace the `{{variables}}` with your context.
-4. Paste into v0 and iterate.
+1. Pick a category folder (e.g., `prompts/marketing/`).
+2. Open a prompt and fill in the `{{variables}}`.
+3. Paste the entire prompt into v0.
+4. Iterate by adding more constraints, pages, or components.
 
-## Recommended workflow
+## v0 prompt design principles
 
-- Start with the closest prompt to your use case.
-- Run it once with rough inputs.
-- Refine by adding constraints, examples, and desired tone.
-- Save your best variant in a personal library.
+- **Specify pages and routes** so v0 builds the full app, not a single screen.
+- **Name components** and how they’re reused.
+- **Describe data models** (mock data is fine).
+- **Include UX details** (responsive layout, navigation, accessibility).
 
 ## Contributing
 
-Want to add prompts? PRs are welcome!
+PRs are welcome!
 
-- Keep prompts **concise** and **copy‑paste friendly**.
+- Keep prompts **web-app oriented** (pages, components, data).
 - Provide **clear inputs** and **structured outputs**.
 - Avoid vague language and buzzwords.
 - Make prompts **specific** and **actionable**.

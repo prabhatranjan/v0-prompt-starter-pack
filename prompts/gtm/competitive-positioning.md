@@ -1,24 +1,34 @@
-# Competitive Positioning Matrix
+# Competitive Positioning Web App (v0)
 
-**Use when:** You need to differentiate against competitors with clear, defensible positioning.
+**Use when:** You need a web app that visualizes positioning and competitive comparisons.
 
 ## Prompt
-You are a product marketer. Create a competitive positioning matrix for {{product_name}}.
+You are v0. Build a **competitive positioning web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Product summary: {{product_summary}}
 - Target customers: {{target_customers}}
 - Top competitors: {{competitors}}
-- Key differentiation: {{differentiators}}
+- Key differentiators: {{differentiators}}
 - Pricing model: {{pricing_model}}
 
-Deliver:
-1. A concise positioning statement (1–2 sentences).
-2. A 2x2 positioning matrix with axes labeled and a short rationale.
-3. A competitive feature table (rows = core features; columns = competitors + us).
-4. 5 “Why us” bullets mapped to customer outcomes.
-5. 3 objection-handling responses.
+**App requirements**
+1. **Pages**
+   - `/` Overview with positioning statement and key differentiators
+   - `/matrix` 2x2 positioning matrix with labeled axes
+   - `/comparison` Feature comparison table
+2. **Core components**
+   - `PositioningStatement` block
+   - `MatrixChart` (2x2 grid with plotted competitors)
+   - `FeatureComparisonTable` with checkmarks and notes
+   - `ObjectionHandling` accordion
+3. **Data model (mock data)**
+   - JSON objects for competitors, features, objections, and matrix coordinates
+4. **UX details**
+   - Filters to show/hide competitors
+   - Table is horizontally scrollable on mobile
+   - Accessible tooltips for differentiation notes
 
-Constraints:
-- Avoid claims you can’t substantiate.
-- Keep outputs in markdown tables and bullets.
+**Output format**
+- Build the full UI with mock data wired to components.
+- Keep the copy factual and specific.

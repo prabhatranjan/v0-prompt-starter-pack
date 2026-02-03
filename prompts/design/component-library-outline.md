@@ -1,21 +1,30 @@
-# Component Library Outline
+# Component Library Planner App (v0)
 
-**Use when:** You need a scoped list of UI components to build.
+**Use when:** You want a web app that inventories UI components and variants.
 
 ## Prompt
-You are a UI designer. Create a component library outline for {{product_name}}.
+You are v0. Build a **component library planner web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Product type: {{product_type}}
 - Core workflows: {{core_workflows}}
 - Platforms: {{platforms}}
 
-Deliver:
-1. Component inventory grouped by category (inputs, navigation, data display, feedback).
-2. Variants and states for each component.
-3. Accessibility considerations per component.
-4. Prioritization order (MVP → nice-to-have).
+**App requirements**
+1. **Pages**
+   - `/` Component inventory
+   - `/variants` Variants and states
+   - `/prioritization` MVP → nice-to-have
+2. **Core components**
+   - `ComponentTable` with categories
+   - `StateMatrix` for variants
+   - `PriorityKanban` (mock)
+3. **Data model (mock data)**
+   - Components array with category, variants, a11y notes
+4. **UX details**
+   - Search and filter by category
+   - A11y badges per component
 
-Constraints:
+**Output format**
+- Build the full UI with mock component data and tables.
 - Favor reusability and consistency.
-- Make it implementation-ready.

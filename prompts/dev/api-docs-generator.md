@@ -1,23 +1,31 @@
-# API Docs Generator
+# API Docs Portal App (v0)
 
-**Use when:** You need clean, developer-friendly API documentation.
+**Use when:** You want a web app that presents clean API docs with examples.
 
 ## Prompt
-You are a technical writer. Draft API docs for {{api_name}}.
+You are v0. Build an **API docs portal web app** for {{api_name}}.
 
-Inputs:
+**Inputs**
 - Base URL: {{base_url}}
 - Auth method: {{auth_method}}
 - Endpoints: {{endpoints}}
 - Errors: {{errors}}
 
-Deliver:
-1. Overview section with authentication.
-2. Endpoint list with request/response examples.
-3. Error handling table.
-4. Rate limit guidance.
-5. Quickstart example (curl + sample response).
+**App requirements**
+1. **Pages**
+   - `/` Overview + authentication
+   - `/reference` Endpoint reference
+   - `/errors` Error codes and handling
+2. **Core components**
+   - `EndpointCard` with request/response
+   - `CodeBlock` with syntax highlighting
+   - `ErrorTable`
+3. **Data model (mock data)**
+   - Endpoints array with method, path, params, example
+4. **UX details**
+   - Sticky sidebar for sections
+   - Copy-to-clipboard buttons (mock)
 
-Constraints:
-- Use clear, minimal language.
-- Include JSON examples.
+**Output format**
+- Build the full UI with mock API docs and JSON examples.
+- Keep language minimal and developer-friendly.

@@ -1,21 +1,30 @@
-# Metric Tree Builder
+# Metric Tree App (v0)
 
-**Use when:** You need a north star metric with supporting inputs.
+**Use when:** You want a web app that visualizes a north star metric and inputs.
 
 ## Prompt
-You are a data strategist. Build a metric tree for {{north_star_metric}}.
+You are v0. Build a **metric tree web app** for {{north_star_metric}}.
 
-Inputs:
+**Inputs**
 - Product context: {{product_context}}
 - Business model: {{business_model}}
 - Growth levers: {{growth_levers}}
 
-Deliver:
-1. North Star Metric definition and formula.
-2. Input metrics (acquisition, activation, retention, revenue).
-3. Leading vs lagging indicators.
-4. Recommended targets for the next quarter.
+**App requirements**
+1. **Pages**
+   - `/` Metric tree overview
+   - `/inputs` Input metrics detail
+   - `/targets` Quarterly targets
+2. **Core components**
+   - `MetricTree` diagram (nodes + edges)
+   - `MetricCard` with formula
+   - `TargetTable` with leading/lagging indicators
+3. **Data model (mock data)**
+   - Metrics array with formulas and relationships
+4. **UX details**
+   - Toggle for leading vs lagging views
+   - Hover tooltips for definitions
 
-Constraints:
-- Keep formulas explicit and consistent.
-- Ensure each input metric is actionable.
+**Output format**
+- Build the full UI with a clear metric tree visualization.
+- Keep formulas explicit and actionable.

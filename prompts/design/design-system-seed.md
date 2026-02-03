@@ -1,21 +1,30 @@
-# Design System Seed
+# Design System Generator App (v0)
 
-**Use when:** You need a first pass design system for a new product.
+**Use when:** You want a web app that generates and previews a design system.
 
 ## Prompt
-You are a design systems lead. Create a design system seed for {{product_name}}.
+You are v0. Build a **design system generator web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Brand attributes: {{brand_attributes}}
 - Primary user tasks: {{primary_tasks}}
 - Platforms: {{platforms}}
 
-Deliver:
-1. Design tokens: color palette, typography scale, spacing scale.
-2. Component list (core UI components + usage notes).
-3. Accessibility checklist (contrast, focus, motion).
-4. Example UI patterns (forms, navigation, empty states).
+**App requirements**
+1. **Pages**
+   - `/` Overview with tokens and usage
+   - `/components` Component gallery
+   - `/patterns` UI patterns preview
+2. **Core components**
+   - `TokenSwatch` (color, typography, spacing)
+   - `ComponentGallery` cards
+   - `AccessibilityChecklist`
+3. **Data model (mock data)**
+   - Tokens object, component list, pattern list
+4. **UX details**
+   - Light/dark toggle (mock)
+   - Copy token value button (mock)
 
-Constraints:
-- Keep tokens minimal and extensible.
-- Prioritize accessibility.
+**Output format**
+- Build the full UI with sample tokens and components.
+- Prioritize accessibility and consistent styling.

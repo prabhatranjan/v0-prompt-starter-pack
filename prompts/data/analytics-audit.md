@@ -1,22 +1,31 @@
-# Analytics Audit
+# Analytics Audit App (v0)
 
-**Use when:** You need to audit instrumentation and tracking coverage.
+**Use when:** You want a web app that audits tracking and instrumentation coverage.
 
 ## Prompt
-You are an analytics lead. Audit the tracking setup for {{product_name}}.
+You are v0. Build an **analytics audit web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Key user journeys: {{journeys}}
 - Current events list: {{events}}
 - Analytics tools: {{tools}}
 - Business goals: {{goals}}
 
-Deliver:
-1. Coverage map (journey → events).
-2. Missing events and recommended properties.
-3. Data governance gaps (naming, ownership, documentation).
-4. A prioritized fix list with effort/impact.
+**App requirements**
+1. **Pages**
+   - `/` Audit overview
+   - `/coverage` Journey → events map
+   - `/fixes` Prioritized fix list
+2. **Core components**
+   - `CoverageMatrix` (journey vs event)
+   - `GapList` with recommended properties
+   - `PriorityList` with impact/effort badges
+3. **Data model (mock data)**
+   - Journeys array, events array, gaps array
+4. **UX details**
+   - Filters by journey and tool
+   - Export audit summary (mock)
 
-Constraints:
+**Output format**
+- Build the full UI with coverage tables and recommendations.
 - Keep recommendations implementable within 2 sprints.
-- Use clear event naming conventions.

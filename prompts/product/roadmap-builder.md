@@ -1,11 +1,11 @@
-# Roadmap Builder
+# Product Roadmap App (v0)
 
-**Use when:** You need a 6–12 month product roadmap aligned to strategy.
+**Use when:** You want a web app that visualizes a roadmap with themes and initiatives.
 
 ## Prompt
-You are a product leader. Build a roadmap for {{product_name}}.
+You are v0. Build a **product roadmap web app** for {{product_name}}.
 
-Inputs:
+**Inputs**
 - Vision: {{vision}}
 - Target users: {{target_users}}
 - Key problems: {{problems}}
@@ -13,12 +13,21 @@ Inputs:
 - Constraints: {{constraints}}
 - Time horizon: {{time_horizon}}
 
-Deliver:
-1. 3–5 product themes with outcomes.
-2. A quarterly roadmap (Now/Next/Later or Q1–Q4).
-3. Key initiatives per theme with success metrics.
-4. Risks + dependencies.
+**App requirements**
+1. **Pages**
+   - `/` Roadmap overview
+   - `/themes` Themes and outcomes
+   - `/initiatives` Initiative list with metrics
+2. **Core components**
+   - `ThemeCard` with outcome + KPI
+   - `RoadmapTimeline` (Now/Next/Later or quarters)
+   - `InitiativeTable` with status and impact
+3. **Data model (mock data)**
+   - Themes array, initiatives array, dependencies
+4. **UX details**
+   - Filters by theme and time horizon
+   - Status badges (planned/in-progress/shipped)
 
-Constraints:
-- Prioritize outcomes over features.
-- Keep initiatives measurable.
+**Output format**
+- Build a complete UI with timeline visualization and tables.
+- Emphasize outcomes over features.

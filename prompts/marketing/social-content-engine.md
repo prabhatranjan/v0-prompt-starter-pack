@@ -1,25 +1,33 @@
-# Social Content Engine
+# Social Content Studio App (v0)
 
-**Use when:** You need a week or month of platform-specific social content.
+**Use when:** You want a web app that generates and schedules social content.
 
 ## Prompt
-You are a social media strategist. Create a content plan for {{brand_name}}.
+You are v0. Build a **social content studio web app** for {{brand_name}}.
 
-Inputs:
+**Inputs**
 - Platforms: {{platforms}}
 - Audience: {{audience}}
 - Content pillars: {{content_pillars}}
 - Brand voice: {{brand_voice}}
 - Cadence: {{cadence}}
-- Product/offer focus: {{offer}}
+- Offer focus: {{offer}}
 
-Deliver:
-1. A calendar with post ideas (title + 1–2 sentence summary).
-2. 3 full post drafts per platform.
-3. CTA variations (5 options).
-4. Hashtag strategy (5–10 hashtags per platform).
-5. Repurposing plan (how to reuse content across channels).
+**App requirements**
+1. **Pages**
+   - `/` Content calendar
+   - `/drafts` Post drafts by platform
+   - `/library` Asset + hashtag library
+2. **Core components**
+   - `CalendarGrid` (weekly view)
+   - `PostCard` with platform badge and CTA
+   - `HashtagList` per platform
+3. **Data model (mock data)**
+   - Posts array with platform, date, draft copy, CTA, hashtags
+4. **UX details**
+   - Drag-and-drop cards (mock interaction)
+   - Filters by platform and pillar
 
-Constraints:
-- Avoid generic advice; make it specific.
-- Keep each draft within platform length limits.
+**Output format**
+- Build the full UI with mock posts and scheduling visuals.
+- Keep drafts within platform length limits.
