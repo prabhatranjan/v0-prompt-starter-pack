@@ -23,9 +23,25 @@ prompts/
   dev/
   data/
   practical-agents/
+examples/
+  gtm/
+  marketing/
+  product/
+  design/
+  dev/
+  data/
+  practical-agents/
 ```
 
 Each folder contains Markdown files with **ready-to-use v0 prompts** and **clear inputs**.
+
+## Examples
+
+The `examples/` folder contains real-world implementations of prompts with:
+- Filled variables for specific use cases
+- Live Vercel deployments
+- Screenshots of the generated web apps
+- Notes on prompt effectiveness and iterations
 
 ## How to use
 
@@ -33,6 +49,7 @@ Each folder contains Markdown files with **ready-to-use v0 prompts** and **clear
 2. Open a prompt and fill in the `{{variables}}`.
 3. Paste the entire prompt into v0.
 4. Iterate by adding more constraints, pages, or components.
+5. (Optional) Check `examples/` for real implementations and inspiration.
 
 ## v0 prompt design principles
 

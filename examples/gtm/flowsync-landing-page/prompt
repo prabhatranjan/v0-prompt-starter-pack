@@ -1,0 +1,38 @@
+You are v0. Build a production-ready GTM landing page web app for FlowSync.
+
+Inputs
+
+Target persona: Product managers and engineering leads at mid-size SaaS companies (50-500 employees)
+Core problem: Teams struggle with scattered project updates, missed deadlines, and lack of real-time visibility into cross-functional work
+Primary outcome: Ship products 30% faster with complete visibility and automated status reporting
+Proof assets (logos, metrics, testimonials): Trusted by 200+ companies, 4.8/5 rating on G2, "FlowSync cut our status meetings by 80%" - Sarah Chen, CTO at TechCorp
+Primary CTA: Start your 14-day free trial
+Brand tone: Professional yet approachable, confident but not arrogant, focused on clarity and results
+App requirements
+
+Pages
+/ Landing page
+/pricing Pricing table with FAQ
+/case-studies 2–3 case study cards
+Core sections on /
+Hero with headline, subhead, CTA
+Benefits (3–5 cards)
+Social proof (logos + 2 testimonials)
+Feature grid (4–6)
+How it works (3 steps)
+FAQ (5 questions)
+Final CTA band
+Components
+Reusable SectionHeader, FeatureCard, TestimonialCard, PricingCard
+Use a cohesive design system (spacing, typography, colors)
+Data model (mock data)
+Provide structured mock content in a data file (arrays of features, testimonials, FAQs, pricing tiers)
+UX details
+Sticky top nav with active section anchors
+Responsive layout (mobile → desktop)
+Accessible headings and buttons
+Output format
+
+Generate the full app UI with working navigation.
+Include placeholder copy that can be swapped for real inputs.
+Keep text concise and conversion-focused.
